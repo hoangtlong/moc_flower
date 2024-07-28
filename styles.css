@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header .logo img {
+    max-height: 80px;
+}
+
+header .social-icons img {
+    max-height: 24px;
+    margin-left: 10px;
+}
+
+header h1 {
+    color: #4A90E2;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #4A90E2;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #4A90E2;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+.album .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.album .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.album .card-body {
+    text-align: center;
+}
+
+.album .card-title {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.album .card-text {
+    font-size: 0.875rem;
+    color: #777;
+}
+
+
+.carousel-item-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carousel-inner .carousel-item {
+    position: relative;
+    height: 500px;
+}
+
+.carousel-inner .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item {
+        height: 300px;
+    }
+}
+
+
+.album .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.album .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.album .card-body {
+    text-align: center;
+}
+
+.album .card-title {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.album .card-text {
+    font-size: 0.875rem;
+    color: #777;
+}
+
+
+.carousel-inner {
+	display: flex;
+}
+.carousel-item {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	width: 100%;
+}
+.carousel-item .col-md-3 {
+	flex: 1;
+	max-width: 25%;
+	padding: 0 5px;
+}
+.carousel-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+  
+.list {
+	height: 200px;
+	position: relative;
+}
+
+/* Common styles for all list items */
+.list li {
+	list-style-type: none;
+	width: 450px;
+	height: 250px;
+	position: absolute;
+	left: 50%;
+	margin-left: -225px; /* Adjusted to center the element correctly */
+	border-radius: 2px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	background: #ffffff;
+	transition: transform 1s, opacity 1s;
+}
+
+/* Active item styles */
+.list .act {
+	opacity: 1;
+	z-index: 2; /* Ensure active element is on top */
+}
+
+/* Previous and next item styles */
+.list .prev,
+.list .next {
+	cursor: pointer;
+	z-index: 1; /* Ensure prev and next elements are below the active element */
+}
+
+/* Transformations for previous and next items */
+.list .prev {
+	transform: translateX(-220px) scale(.85);
+}
+
+.list .next {
+	transform: translateX(220px) scale(.85);
+}
+
+/* Styles for hidden and new next items */
+.list .hide,
+.list .new-next {
+	opacity: 0;
+	z-index: 0; /* Ensure hidden elements are below all others */
+}
+
+
+
+
+
+
+
+
+
+  #custom-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.custom-carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.custom-carousel-item {
+    min-width: 25%;
+    box-sizing: border-box;
+}
+
+.custom-carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.custom-carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.custom-carousel-control.prev {
+    left: 10px;
+}
+
+.custom-carousel-control.next {
+    right: 10px;
+}
+
+footer  {
+	background: rgba(44, 55, 73, 1);
+	color: white;
+
+}
+

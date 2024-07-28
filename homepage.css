@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #5fa5eb; /* Light gray background for header */
+    padding: 10px 0; /* Vertical padding for header */
+}
+
+
+
+.header-line{
+	position:absolute;
+	right: 5%;
+}
+
+.header-icon{
+	position:absolute;
+	left: 5%;
+}
+
+.social-icons {
+    background-color: rgba(89, 200, 224, 1);
+    padding: 20px;
+	height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	top: -16px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.social-icons div {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo and Search Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 25px;
+	width: 300px;
+	height: 40px;
+}
+
+.search img {
+    padding: 5px 15px;
+    font-size: 16px;
+    color: white;
+    /*background-color: #007bff;*/
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search button:hover {
+    background-color: #0056b3;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff; /* White background for navbar */
+    border-bottom: 1px solid #dee2e6; /* Border at the bottom of the navbar */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath d="M4 6h16M4 12h16M4 18h16"%3E%3C/path%3E%3C/svg%3E');
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Active Link Style */
+.nav-item.active .nav-link {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+
+/* Carousel container */
+#carouselExampleIndicators {
+    position: relative;
+}
+
+/* Carousel inner */
+.carousel-inner {
+    position: relative;
+}
+
+/* Carousel item */
+.carousel-item {
+    position: relative;
+}
+
+/* Text overlay */
+.carousel-item p {
+    position: absolute;
+    top: 50%; /* Center text vertically */
+    left: 50%; /* Center text horizontally */
+    transform: translate(-50%, -50%); /* Center text using translate */
+    color: white;
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 15px 20px; /* Adjust padding for better appearance */
+    border-radius: 5px; /* Rounded corners for the background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: add shadow to text for better contrast */
+    max-width: 90%; /* Optional: constrain the width of the text block */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Carousel indicators */
+.carousel-indicators li {
+    background-color: #000; /* Color for inactive indicators */
+}
+
+.carousel-indicators .active {
+    background-color: #fff; /* Color for active indicator */
+}
+
+/* Carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjust width as needed */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: background color for control icons */
+}
+
+/* Ensure image covers the area */
+.carousel-item img {
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
